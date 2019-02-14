@@ -19,13 +19,26 @@ main {
 
 a,
 p,
-h4 {
+h5 {
   font-size: 22px;
+}
+
+h2, h3, h4, h5 {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
 }
 
 h2 {
   font-size: 33px;
-  font-weight: bold;
+}
+
+h3 {
+  font-size: 29px;
+}
+
+h4 {
+  font-size: 25px;
 }
 
 /* header */
@@ -51,8 +64,10 @@ header {
 }
 
 nav {
-  width: 700px;
   float: right;
+  padding-left: 50px;
+  padding-right: 10px;
+  flex-shrink: 0;
 }
 
 nav a {
@@ -75,10 +90,17 @@ nav a {
 }
 
 /* products */
+.product-section {
+  padding: 70px;
+}
+
 .item img {
   height: 200px;
   width: 300px;
   margin: 10px;
+}
+.item h5 {
+  padding-top: 0;
 }
 
 .products {
@@ -99,12 +121,15 @@ nav a {
 
 .location-title {
   background-color: transparent;
+  padding-top: 70px;
 }
 
 .location {
     width: 300px;
     background-color: black;
     margin: 40px;
+    opacity: 1;
+    padding: 20px 0;
 }
 
 .locations {
@@ -115,3 +140,7 @@ nav a {
 }
 
 /* footer */
+.copyright {
+  float: left;
+  padding: 20px;
+}
